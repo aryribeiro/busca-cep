@@ -41,7 +41,7 @@ cep_input = st.text_input("Obs.: apenas números", "")
 
 if cep_input:
     st.write("Buscando informações...")
-    # Remover caracteres não numéricos do CEP
+    # Remover caracteres não numéricos do CEP..
     cep = ''.join(filter(str.isdigit, cep_input))
     
     if len(cep) == 8:  # Verifica se o CEP tem 8 dígitos
